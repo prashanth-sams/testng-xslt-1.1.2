@@ -1,0 +1,314 @@
+<test name="DataProvider">
+  <class name="test.dataprovider.StaticDataProviderSampleTest">
+    <test-method status="FAIL" signature="verifyStatic(java.lang.String)" name="verifyStatic" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+  <class name="test.dataprovider.MultipleDataProviderTest">
+    <test-method status="PASS" signature="verifyTest1DataProvider()" name="verifyTest1DataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.MultipleDataProviderTest.verifyData1" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="PASS" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[John]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[23]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[3]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[36]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[1]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Mary]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[13]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[4]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyTest2DataProvider()" name="verifyTest2DataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.MultipleDataProviderTest.verifyData2" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="1" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Name3]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[43]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[3]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="1" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Anne]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[37]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[2]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Name2]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[47]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[2]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Name1]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[46]]>
+          </value>
+        </param>
+        <param index="2">
+          <value>
+            <![CDATA[1]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+  <class name="test.dataprovider.IterableTest">
+    <test-method status="SKIP" signature="verifyCount()" name="verifyCount" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.IterableTest.verifyNames" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[36]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="1" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Anne Marie]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[37]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+  <class name="test.dataprovider.Sample1Test">
+    <test-method status="SKIP" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Anne Marie]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[37]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Alex]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[30]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyCount()" name="verifyCount" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.Sample1Test.verifyNames" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[36]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+  <class name="test.dataprovider.ChildUsingParentDataProviderTest">
+    <test-method status="SKIP" signature="useParentDataProvider(java.lang.String, java.lang.Integer)" name="useParentDataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Anne Marie]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[37]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="useParentDataProvider(java.lang.String, java.lang.Integer)" name="useParentDataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[36]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="parentTest(java.lang.String, java.lang.Integer)" name="parentTest" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Anne Marie]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[37]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyParentCount()" name="verifyParentCount" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.AbstractRootDataProvider.parentTest" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="verifyCount()" name="verifyCount" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.ChildUsingParentDataProviderTest.useParentDataProvider" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="parentTest(java.lang.String, java.lang.Integer)" name="parentTest" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Cedric]]>
+          </value>
+        </param>
+        <param index="1">
+          <value>
+            <![CDATA[36]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+  <class name="test.dataprovider.ChildDataProvider">
+    <test-method status="SKIP" signature="useChildDataProvider(java.lang.String)" name="useChildDataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Alex]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="SKIP" signature="verifyParentInvocation()" name="verifyParentInvocation" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.dataprovider.ParentBaseTest.useChildDataProvider" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="SKIP" signature="useChildDataProvider(java.lang.String)" name="useChildDataProvider" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[Ana-Maria]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+</test>

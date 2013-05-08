@@ -1,0 +1,110 @@
+<suite name="TestNG JDK 1.4[]{}`X~X!@#$%^*(){};?/\|">
+  <groups>
+    <group name="stop">
+      <method signature="test.dependent.DependsWithRegexp.stop()" name="stop" class="test.dependent.DependsWithRegexp"/>
+    </group>
+    <group name="nopackage">
+      <method signature="NoPackageTest.test()" name="test" class="NoPackageTest"/>
+    </group>
+    <group name="one">
+      <method signature="test.dependent.SampleDependentMethods2.oneB()" name="oneB" class="test.dependent.SampleDependentMethods2"/>
+      <method signature="test.dependent.SampleDependentMethods2.oneA()" name="oneA" class="test.dependent.SampleDependentMethods2"/>
+    </group>
+    <group name="init">
+      <method signature="test.configuration.GroupLessTest.initMethod()" name="initMethod" class="test.configuration.GroupLessTest"/>
+      <method signature="test.configuration.GroupLessTest.startMethod()" name="startMethod" class="test.configuration.GroupLessTest"/>
+    </group>
+    <group name="run">
+      <method signature="test.configuration.GroupLessTest.endMethod()" name="endMethod" class="test.configuration.GroupLessTest"/>
+    </group>
+    <group name="2.1">
+      <method signature="test.dependent.OrderMethodTest.a_second1()" name="a_second1" class="test.dependent.OrderMethodTest"/>
+    </group>
+    <group name="basic1">
+      <method signature="test.sample.Basic1.basic1()" name="basic1" class="test.sample.Basic1"/>
+    </group>
+    <group name="2.0">
+      <method signature="test.dependent.BaseOrderMethodTest.a_second0()" name="a_second0" class="test.dependent.BaseOrderMethodTest"/>
+    </group>
+    <group name="singleString">
+      <method signature="test.parameters.ParameterSample.testSingleString(java.lang.String)" name="testSingleString" class="test.parameters.ParameterSample"/>
+      <method signature="test.parameters.ParameterSample.testSingleStringDeprecated(java.lang.String)" name="testSingleStringDeprecated" class="test.parameters.ParameterSample"/>
+    </group>
+    <group name="outer-group">
+      <method signature="test.sample.Scope.outer(java.lang.String)" name="outer" class="test.sample.Scope"/>
+      <method signature="test.sample.Scope.outerDeprecated(java.lang.String)" name="outerDeprecated" class="test.sample.Scope"/>
+    </group>
+    <group name="3">
+      <method signature="test.dependent.BaseOrderMethodTest.third0()" name="third0" class="test.dependent.BaseOrderMethodTest"/>
+    </group>
+    <group name="mytest1">
+      <method signature="test.dataprovider.MultipleDataProviderTest.verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" class="test.dataprovider.MultipleDataProviderTest"/>
+    </group>
+    <group name="testMethodOnFactoryClass">
+      <method signature="test.factory.FactoryInSeparateClass.checkSum()" name="checkSum" class="test.factory.FactoryInSeparateClass"/>
+    </group>
+    <group name="MyTest">
+      <method signature="test.factory.MyTest.testMethod()" name="testMethod" class="test.factory.MyTest"/>
+    </group>
+    <group name="start">
+      <method signature="test.dependent.DependsWithRegexp.start()" name="start" class="test.dependent.DependsWithRegexp"/>
+    </group>
+    <group name="mytest2">
+      <method signature="test.dataprovider.MultipleDataProviderTest.verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" class="test.dataprovider.MultipleDataProviderTest"/>
+    </group>
+    <group name="inner-group">
+      <method signature="test.sample.Scope.inner(java.lang.String)" name="inner" class="test.sample.Scope"/>
+      <method signature="test.sample.Scope.innerDeprecated(java.lang.String)" name="innerDeprecated" class="test.sample.Scope"/>
+    </group>
+    <group name="1.0">
+      <method signature="test.dependent.OrderMethodTest.z_first0()" name="z_first0" class="test.dependent.OrderMethodTest"/>
+    </group>
+    <group name="current">
+      <method signature="test.Test1.includedGroups()" name="includedGroups" class="test.Test1"/>
+      <method signature="test.CommandLineTest.junitParsing2()" name="junitParsing2" class="test.CommandLineTest"/>
+      <method signature="test.MethodTest.excludeMethodsOnly()" name="excludeMethodsOnly" class="test.MethodTest"/>
+      <method signature="test.CommandLineTest.junitParsing()" name="junitParsing" class="test.CommandLineTest"/>
+      <method signature="test.MethodTest.includeMethodsOnly()" name="includeMethodsOnly" class="test.MethodTest"/>
+      <method signature="test.JUnitTest1.methodsWithSetup()" name="methodsWithSetup" class="test.JUnitTest1"/>
+    </group>
+    <group name="currentold">
+      <method signature="test.Test1.logger()" name="logger" class="test.Test1"/>
+    </group>
+    <group name="group1">
+      <method signature="test.configuration.ConfigurationInheritGroupsSampleTest.test1()" name="test1" class="test.configuration.ConfigurationInheritGroupsSampleTest"/>
+    </group>
+    <group name="first">
+      <method signature="test.classgroup.First.first2()" name="first2" class="test.classgroup.First"/>
+      <method signature="test.classgroup.First.first1()" name="first1" class="test.classgroup.First"/>
+      <method signature="test.factory.FactoryTest2.testInt()" name="testInt" class="test.factory.FactoryTest2"/>
+    </group>
+    <group name="inheritedTestMethod">
+      <method signature="test.sample.BaseSampleInheritance.baseMethod()" name="baseMethod" class="test.sample.BaseSampleInheritance"/>
+    </group>
+    <group name="1.1">
+      <method signature="test.dependent.OrderMethodTest.z_premiere1()" name="z_premiere1" class="test.dependent.OrderMethodTest"/>
+    </group>
+  </groups>
+  <test url="DataProvider.xml"/>
+  <test url="Parameters for constructors.xml"/>
+  <test url="Skip.xml"/>
+  <test url="Test inner scope.xml"/>
+  <test url="AfterClassCalledAtEnd.xml"/>
+  <test url="Factory.xml"/>
+  <test url="Exclusion.xml"/>
+  <test url="Nopackage.xml"/>
+  <test url="Dependents.xml"/>
+  <test url="Regression2.xml"/>
+  <test url="Test outer scope.xml"/>
+  <test url="Regression1.xml"/>
+  <test url="Triangle.xml"/>
+  <test url="Basic.xml"/>
+  <test url="InheritGroups.xml"/>
+  <test url="Inheritance.xml"/>
+  <test url="InvocationCount.xml"/>
+  <test url="Test class groups 1.xml"/>
+  <test url="JUnit.xml"/>
+  <test url="TimeOut.xml"/>
+  <test url="Test class groups 2.xml"/>
+  <test url="CheckTrianglePost.xml"/>
+</suite>

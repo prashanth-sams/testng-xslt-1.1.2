@@ -1,0 +1,68 @@
+<test name="Skip">
+  <class name="test.dependent.DependentTest">
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="dependentMethods()" name="dependentMethods" duration-ms="7" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="simpleSkip()" name="simpleSkip" duration-ms="4" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="10" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="dependentMethodsWithNonExistentMethod()" name="dependentMethodsWithNonExistentMethod" duration-ms="2" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+      <exception class="org.testng.TestNGException">
+        <message>
+          <![CDATA[
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method blablable]]>
+        </message>
+        <full-stacktrace>
+          <![CDATA[org.testng.TestNGException: 
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method blablable
+	at org.testng.internal.MethodHelper.findMethodsNamed(MethodHelper.java:143)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:472)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:544)
+	at org.testng.internal.MethodHelper.internalCollectAndOrderMethods(MethodHelper.java:77)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:49)
+	at org.testng.TestRunner.initMethods(TestRunner.java:355)
+	at org.testng.TestRunner.init(TestRunner.java:234)
+	at org.testng.TestRunner.init(TestRunner.java:196)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:154)
+	at test.BaseTest$InternalTestRunnerFactory.newTestRunner(BaseTest.java:307)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:527)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:250)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at test.BaseTest.run(BaseTest.java:130)
+	at test.dependent.DependentTest.dependentMethodsWithNonExistentMethod(DependentTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:580)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:513)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:658)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:939)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:719)
+	at org.testng.TestRunner.privateRun(TestRunner.java:589)
+	at org.testng.TestRunner.run(TestRunner.java:484)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:325)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:864)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:830)
+	at org.testng.TestNG.run(TestNG.java:748)
+	at org.testng.TestNG.privateMain(TestNG.java:901)
+	at org.testng.TestNG.main(TestNG.java:874)
+]]>
+        </full-stacktrace>
+      </exception>
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="dependentMethodsWithSkip()" name="dependentMethodsWithSkip" duration-ms="5" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

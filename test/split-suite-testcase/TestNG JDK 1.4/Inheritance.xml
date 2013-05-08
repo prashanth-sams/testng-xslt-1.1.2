@@ -1,0 +1,36 @@
+<test name="Inheritance">
+  <class name="test.inheritance.ClassScopeTest">
+    <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" started-at="2008-06-11T21:09:57Z" depends-on-methods="test.inheritance.ClassScopeTest.setVerify" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="PASS" signature="setVerify()" name="setVerify" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+  </class>
+  <class name="test.configuration.ExternalConfigurationClass">
+    <test-method status="PASS" signature="afterSuite()" name="afterSuite" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="PASS" signature="cleanUp()" name="cleanUp" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="PASS" signature="afterSuite()" name="afterSuite" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+  </class>
+  <class name="test.configuration.GroupLessTest">
+    <test-method status="PASS" signature="beforeSuite()" name="beforeSuite" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="beforeSuite()" name="beforeSuite" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+  </class>
+</test>

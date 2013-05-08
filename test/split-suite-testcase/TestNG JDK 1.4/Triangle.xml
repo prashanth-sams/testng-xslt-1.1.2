@@ -1,0 +1,20 @@
+<test name="Triangle">
+  <class name="test.triangle.Child2">
+    <test-method status="PASS" signature="child2()" name="child2" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="initBeforeTestClass()" name="initBeforeTestClass" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="postAfterTestClass()" name="postAfterTestClass" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.triangle.Child1">
+    <test-method status="PASS" signature="initBeforeTestClass()" name="initBeforeTestClass" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="child1()" name="child1" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="child1a()" name="child1a" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="postAfterTestClass()" name="postAfterTestClass" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

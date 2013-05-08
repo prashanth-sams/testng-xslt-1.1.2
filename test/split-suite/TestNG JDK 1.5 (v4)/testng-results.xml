@@ -1,0 +1,1475 @@
+<suite name="TestNG 222">
+    <groups>
+        <group name="stop">
+            <method signature="test.dependent.DependsWithRegexp.stop()" name="stop" class="test.dependent.DependsWithRegexp"/>
+        </group>
+        <group name="nopackage">
+            <method signature="NoPackageTest.test()" name="test" class="NoPackageTest"/>
+        </group>
+        <group name="one">
+            <method signature="test.dependent.SampleDependentMethods2.oneB()" name="oneB" class="test.dependent.SampleDependentMethods2"/>
+            <method signature="test.dependent.SampleDependentMethods2.oneA()" name="oneA" class="test.dependent.SampleDependentMethods2"/>
+        </group>
+        <group name="init">
+            <method signature="test.configuration.GroupLessTest.initMethod()" name="initMethod" class="test.configuration.GroupLessTest"/>
+            <method signature="test.configuration.GroupLessTest.startMethod()" name="startMethod" class="test.configuration.GroupLessTest"/>
+        </group>
+        <group name="run">
+            <method signature="test.configuration.GroupLessTest.endMethod()" name="endMethod" class="test.configuration.GroupLessTest"/>
+        </group>
+        <group name="2.1">
+            <method signature="test.dependent.OrderMethodTest.a_second1()" name="a_second1" class="test.dependent.OrderMethodTest"/>
+        </group>
+        <group name="basic1">
+            <method signature="test.sample.Basic1.basic1()" name="basic1" class="test.sample.Basic1"/>
+        </group>
+        <group name="2.0">
+            <method signature="test.dependent.BaseOrderMethodTest.a_second0()" name="a_second0" class="test.dependent.BaseOrderMethodTest"/>
+        </group>
+        <group name="singleString">
+            <method signature="test.parameters.ParameterSample.testSingleString(java.lang.String)" name="testSingleString" class="test.parameters.ParameterSample"/>
+            <method signature="test.parameters.ParameterSample.testSingleStringDeprecated(java.lang.String)" name="testSingleStringDeprecated" class="test.parameters.ParameterSample"/>
+        </group>
+        <group name="outer-group">
+            <method signature="test.sample.Scope.outer(java.lang.String)" name="outer" class="test.sample.Scope"/>
+            <method signature="test.sample.Scope.outerDeprecated(java.lang.String)" name="outerDeprecated" class="test.sample.Scope"/>
+        </group>
+        <group name="3">
+            <method signature="test.dependent.BaseOrderMethodTest.third0()" name="third0" class="test.dependent.BaseOrderMethodTest"/>
+        </group>
+        <group name="mytest1">
+            <method signature="test.dataprovider.MultipleDataProviderTest.verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1"
+                    class="test.dataprovider.MultipleDataProviderTest"/>
+        </group>
+        <group name="testMethodOnFactoryClass">
+            <method signature="test.factory.FactoryInSeparateClass.checkSum()" name="checkSum" class="test.factory.FactoryInSeparateClass"/>
+        </group>
+        <group name="MyTest">
+            <method signature="test.factory.MyTest.testMethod()" name="testMethod" class="test.factory.MyTest"/>
+        </group>
+        <group name="start">
+            <method signature="test.dependent.DependsWithRegexp.start()" name="start" class="test.dependent.DependsWithRegexp"/>
+        </group>
+        <group name="mytest2">
+            <method signature="test.dataprovider.MultipleDataProviderTest.verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2"
+                    class="test.dataprovider.MultipleDataProviderTest"/>
+        </group>
+        <group name="inner-group">
+            <method signature="test.sample.Scope.inner(java.lang.String)" name="inner" class="test.sample.Scope"/>
+            <method signature="test.sample.Scope.innerDeprecated(java.lang.String)" name="innerDeprecated" class="test.sample.Scope"/>
+        </group>
+        <group name="1.0">
+            <method signature="test.dependent.OrderMethodTest.z_first0()" name="z_first0" class="test.dependent.OrderMethodTest"/>
+        </group>
+        <group name="current">
+            <method signature="test.Test1.includedGroups()" name="includedGroups" class="test.Test1"/>
+            <method signature="test.CommandLineTest.junitParsing2()" name="junitParsing2" class="test.CommandLineTest"/>
+            <method signature="test.CommandLineTest.junitParsing()" name="junitParsing" class="test.CommandLineTest"/>
+            <method signature="test.MethodTest.excludeMethodsOnly()" name="excludeMethodsOnly" class="test.MethodTest"/>
+            <method signature="test.MethodTest.includeMethodsOnly()" name="includeMethodsOnly" class="test.MethodTest"/>
+            <method signature="test.JUnitTest1.methodsWithSetup()" name="methodsWithSetup" class="test.JUnitTest1"/>
+        </group>
+        <group name="currentold">
+            <method signature="test.Test1.logger()" name="logger" class="test.Test1"/>
+        </group>
+        <group name="group1">
+            <method signature="test.configuration.ConfigurationInheritGroupsSampleTest.test1()" name="test1" class="test.configuration.ConfigurationInheritGroupsSampleTest"/>
+        </group>
+        <group name="first">
+            <method signature="test.classgroup.First.first2()" name="first2" class="test.classgroup.First"/>
+            <method signature="test.classgroup.First.first1()" name="first1" class="test.classgroup.First"/>
+            <method signature="test.factory.FactoryTest2.testInt()" name="testInt" class="test.factory.FactoryTest2"/>
+        </group>
+        <group name="inheritedTestMethod">
+            <method signature="test.sample.BaseSampleInheritance.baseMethod()" name="baseMethod" class="test.sample.BaseSampleInheritance"/>
+        </group>
+        <group name="1.1">
+            <method signature="test.dependent.OrderMethodTest.z_premiere1()" name="z_premiere1" class="test.dependent.OrderMethodTest"/>
+        </group>
+    </groups>
+    <test name="DataProvider">
+        <class name="test.dataprovider.MultipleDataProviderTest">
+            <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Name2]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[47]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[2]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Name3]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[43]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[3]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="1" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[36]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[1]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyData1(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData1" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Name1]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[46]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[1]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Mary]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[13]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[4]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyTest1DataProvider()" name="verifyTest1DataProvider" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         depends-on-methods="test.dataprovider.MultipleDataProviderTest.verifyData1" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[John]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[23]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[3]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyTest2DataProvider()" name="verifyTest2DataProvider" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         depends-on-methods="test.dataprovider.MultipleDataProviderTest.verifyData2" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyData2(java.lang.String, java.lang.Integer, java.lang.Integer)" name="verifyData2" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Anne]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[37]]>
+                        </value>
+                    </param>
+                    <param index="2">
+                        <value>
+                            <![CDATA[2]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+        <class name="test.dataprovider.IterableTest">
+            <test-method status="PASS" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Anne Marie]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[37]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[36]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyCount()" name="verifyCount" duration-ms="0" started-at="2007-08-12T16:40:30Z" depends-on-methods="test.dataprovider.IterableTest.verifyNames"
+                         finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+        </class>
+        <class name="test.dataprovider.Sample1Test">
+            <test-method status="PASS" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Alex]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[30]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyCount()" name="verifyCount" duration-ms="1" started-at="2007-08-12T16:40:30Z" depends-on-methods="test.dataprovider.Sample1Test.verifyNames"
+                         finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Anne Marie]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[37]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyNames(java.lang.String, java.lang.Integer)" name="verifyNames" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[36]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+        <class name="test.dataprovider.ChildUsingParentDataProviderTest">
+            <test-method status="PASS" signature="verifyCount()" name="verifyCount" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         depends-on-methods="test.dataprovider.ChildUsingParentDataProviderTest.useParentDataProvider" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="parentTest(java.lang.String, java.lang.Integer)" name="parentTest" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[36]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="verifyParentCount()" name="verifyParentCount" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         depends-on-methods="test.dataprovider.AbstractRootDataProvider.parentTest" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="useParentDataProvider(java.lang.String, java.lang.Integer)" name="useParentDataProvider" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Anne Marie]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[37]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="useParentDataProvider(java.lang.String, java.lang.Integer)" name="useParentDataProvider" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[36]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="parentTest(java.lang.String, java.lang.Integer)" name="parentTest" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Anne Marie]]>
+                        </value>
+                    </param>
+                    <param index="1">
+                        <value>
+                            <![CDATA[37]]>
+                        </value>
+                    </param>
+                </params>
+                `
+            </test-method>
+        </class>
+        <class name="test.dataprovider.ChildDataProvider">
+            <test-method status="FAIL" signature="verifyParentInvocation()" name="verifyParentInvocation" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         depends-on-methods="test.dataprovider.ParentBaseTest.useChildDataProvider" finished-at="2007-08-12T16:40:30Z" description="some test method description">
+            </test-method>
+            <test-method status="FAIL" signature="useChildDataProvider(java.lang.String)" name="useChildDataProvider" duration-ms="1" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Alex]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="FAIL" signature="useChildDataProvider(java.lang.String)" name="useChildDataProvider" duration-ms="0" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Ana-Maria]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+    </test>
+    <test name="Parameters for constructors">
+        <class name="test.ParameterConstructorTest">
+            <test-method status="FAIL" signature="verify()" name="verify" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Skip [sample4]">
+        <class name="test.dependent.DependentTest">
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="dependentMethodsWithNonExistentMethod()" name="dependentMethodsWithNonExistentMethod" duration-ms="5" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+                <exception class="org.testng.TestNGException">
+                    <message>
+                        <![CDATA[
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method samplesampleble]]>
+                    </message>
+                    <full-stacktrace>
+                        <![CDATA[org.testng.TestNGException:
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method samplesampleble
+	at org.testng.internal.MethodHelper.findMethodsNamed(MethodHelper.java:143)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:470)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:542)
+	at org.testng.internal.MethodHelper.internalCollectAndOrderMethods(MethodHelper.java:77)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:49)
+	at org.testng.TestRunner.initMethods(TestRunner.java:327)
+	at org.testng.TestRunner.init(TestRunner.java:206)
+	at org.testng.TestRunner.init(TestRunner.java:168)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:134)
+	at test.BaseTest$InternalTestRunnerFactory.newTestRunner(BaseTest.java:310)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:483)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:234)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at test.BaseTest.run(BaseTest.java:134)
+	at test.dependent.DependentTest.dependentMethodsWithNonExistentMethod(DependentTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:578)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:470)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:830)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:679)
+	at org.testng.TestRunner.privateRun(TestRunner.java:556)
+	at org.testng.TestRunner.run(TestRunner.java:456)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:300)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:295)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:275)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:792)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:765)
+	at org.testng.TestNG.run(TestNG.java:699)
+	at org.testng.TestNG.privateMain(TestNG.java:824)
+	at org.testng.TestNG.main(TestNG.java:802)
+]]>
+                    </full-stacktrace>
+                </exception>
+            </test-method>
+            <test-method status="FAIL" signature="dependentMethodsWithCycle()" name="dependentMethodsWithCycle" duration-ms="4" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <exception class="org.testng.TestNGException">
+                    <message>
+                        <![CDATA[
+Cyclic graph of methods]]>
+                    </message>
+                    <full-stacktrace>
+                        <![CDATA[org.testng.TestNGException:
+Cyclic graph of methods
+	at org.testng.internal.Graph.topologicalSort(Graph.java:118)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:492)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:542)
+	at org.testng.internal.MethodHelper.internalCollectAndOrderMethods(MethodHelper.java:77)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:49)
+	at org.testng.TestRunner.initMethods(TestRunner.java:327)
+	at org.testng.TestRunner.init(TestRunner.java:206)
+	at org.testng.TestRunner.init(TestRunner.java:168)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:134)
+	at test.BaseTest$InternalTestRunnerFactory.newTestRunner(BaseTest.java:310)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:483)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:234)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at test.BaseTest.run(BaseTest.java:134)
+	at test.dependent.DependentTest.dependentMethodsWithCycle(DependentTest.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:578)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:470)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:830)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:679)
+	at org.testng.TestRunner.privateRun(TestRunner.java:556)
+	at org.testng.TestRunner.run(TestRunner.java:456)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:300)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:295)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:275)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:792)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:765)
+	at org.testng.TestNG.run(TestNG.java:699)
+	at org.testng.TestNG.privateMain(TestNG.java:824)
+	at org.testng.TestNG.main(TestNG.java:802)
+]]>
+                    </full-stacktrace>
+                </exception>
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="simpleSkip()" name="simpleSkip" duration-ms="6" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="dependentMethods()" name="dependentMethods" duration-ms="13" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="dependentMethodsWithSkip()" name="dependentMethodsWithSkip" duration-ms="8" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Test inner scope">
+        <class name="test.sample.Scope">
+            <test-method status="FAIL" signature="inner(java.lang.String)" name="inner" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[in]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="FAIL" signature="innerDeprecated(java.lang.String)" name="innerDeprecated" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[in]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+    </test>
+    <test name="AfterClassCalledAtEnd">
+        <class name="test.sample.AfterClassCalledAtEnd">
+            <test-method status="FAIL" signature="test1()" name="test1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="baseAfterClass()" name="baseAfterClass" is-config="true" duration-ms="0" depends-on-groups=".*" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="test3()" name="test3" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="afterClass()" name="afterClass" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="test2()" name="test2" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="before1Class()" name="before1Class" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Factory">
+        <class name="test.factory.IInstanceFactory">
+            <test-method status="FAIL" signature="afterVerification()" name="afterVerification" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.factory.IInstanceFactory$TestInterface">
+            <test-method status="FAIL" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.factory.MyTest">
+            <test-method status="FAIL" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="1"
+                         depends-on-groups="testMethodOnFactoryClass" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="0"
+                         depends-on-groups="testMethodOnFactoryClass" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="0"
+                         depends-on-groups="testMethodOnFactoryClass" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.factory.FactoryTest2">
+            <test-method status="FAIL" signature="testInt()" name="testInt" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="testInt()" name="testInt" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.factory.FactoryInSeparateClass">
+            <test-method status="FAIL" signature="checkSum()" name="checkSum" duration-ms="0" depends-on-groups="MyTest" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.factory.VerifyFactoryTest">
+            <test-method status="FAIL" signature="mainCheck()" name="mainCheck" duration-ms="0" depends-on-groups="first" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Exclusion">
+        <class name="test.Test2">
+            <test-method status="FAIL" signature="setUpWithGroups()" name="setUpWithGroups" duration-ms="2" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="partialGroupsClass()" name="partialGroupsClass" duration-ms="13" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="partialGroupsMethod()" name="partialGroupsMethod" duration-ms="10" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="noGroups()" name="noGroups" duration-ms="27" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="14" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Nopackage">
+        <class name="NoPackageTest">
+            <test-method status="FAIL" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="test()" name="test" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Dependents">
+        <class name="test.dependent.SampleDependentMethods">
+            <test-method status="FAIL" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="oneA()" name="oneA" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="canBeRunAnytime()" name="canBeRunAnytime" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="oneB()" name="oneB" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="thirdA()" name="thirdA" duration-ms="0" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.dependent.SampleDependentMethods.secondA"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="secondA()" name="secondA" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         depends-on-methods="test.dependent.SampleDependentMethods.oneB, test.dependent.SampleDependentMethods.oneA" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.SampleDependentConfigurationMethods">
+            <test-method status="FAIL" signature="verifyDependents()" name="verifyDependents" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="createInstance()" name="createInstance" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         depends-on-methods="test.dependent.SampleDependentConfigurationMethods.firstInvocation" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="firstInvocation()" name="firstInvocation" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.DependentAlwaysRunTest">
+            <test-method status="FAIL" signature="verifyDependsOnMethodsAlwaysRun()" name="verifyDependsOnMethodsAlwaysRun" duration-ms="18" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="FAIL" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="26" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyDependsOnGroups1AlwaysRun()" name="verifyDependsOnGroups1AlwaysRun" duration-ms="11" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyDependsOnGroups2AlwaysRun()" name="verifyDependsOnGroups2AlwaysRun" duration-ms="12" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="17" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.DependsWithRegexp">
+            <test-method status="PASS" signature="start()" name="start" duration-ms="2" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="verify()" name="verify" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="stop()" name="stop" duration-ms="0" depends-on-groups="start.*" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.TestngTest">
+            <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="test2()" name="test2" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="test0()" name="test0" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="test1()" name="test1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.SampleDependentMethods3">
+            <test-method status="PASS" signature="one(java.lang.String)" name="one" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="one()" name="one" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="secondA()" name="secondA" duration-ms="1" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.dependent.SampleDependentMethods3.one"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.SampleDependentMethods2">
+            <test-method status="PASS" signature="canBeRunAnytime()" name="canBeRunAnytime" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="oneB()" name="oneB" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="thirdA()" name="thirdA" duration-ms="0" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.dependent.SampleDependentMethods2.secondA"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="secondA()" name="secondA" duration-ms="0" depends-on-groups="one" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="oneA()" name="oneA" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.DependentTest">
+            <test-method status="PASS" signature="dependentMethods()" name="dependentMethods" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="dependentMethodsWithCycle()" name="dependentMethodsWithCycle" duration-ms="6" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+                <exception class="org.testng.TestNGException">
+                    <message>
+                        <![CDATA[
+Cyclic graph of methods]]>
+                    </message>
+                    <full-stacktrace>
+                        <![CDATA[org.testng.TestNGException:
+Cyclic graph of methods
+	at org.testng.internal.Graph.topologicalSort(Graph.java:118)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:492)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:542)
+	at org.testng.internal.MethodHelper.internalCollectAndOrderMethods(MethodHelper.java:77)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:49)
+	at org.testng.TestRunner.initMethods(TestRunner.java:327)
+	at org.testng.TestRunner.init(TestRunner.java:206)
+	at org.testng.TestRunner.init(TestRunner.java:168)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:134)
+	at test.BaseTest$InternalTestRunnerFactory.newTestRunner(BaseTest.java:310)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:483)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:234)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at test.BaseTest.run(BaseTest.java:134)
+	at test.dependent.DependentTest.dependentMethodsWithCycle(DependentTest.java:111)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:578)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:470)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:830)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:679)
+	at org.testng.TestRunner.privateRun(TestRunner.java:556)
+	at org.testng.TestRunner.run(TestRunner.java:456)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:300)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:295)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:275)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:792)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:765)
+	at org.testng.TestNG.run(TestNG.java:699)
+	at org.testng.TestNG.privateMain(TestNG.java:824)
+	at org.testng.TestNG.main(TestNG.java:802)
+]]>
+                    </full-stacktrace>
+                </exception>
+            </test-method>
+            <test-method status="PASS" signature="simpleSkip()" name="simpleSkip" duration-ms="8" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="dependentMethodsWithNonExistentMethod()" name="dependentMethodsWithNonExistentMethod" duration-ms="6" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+                <exception class="org.testng.TestNGException">
+                    <message>
+                        <![CDATA[
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method samplesampleble]]>
+                    </message>
+                    <full-stacktrace>
+                        <![CDATA[org.testng.TestNGException:
+test.dependent.SampleDependentMethods5.step2() is depending on nonexistent method samplesampleble
+	at org.testng.internal.MethodHelper.findMethodsNamed(MethodHelper.java:143)
+	at org.testng.internal.MethodHelper.topologicalSort(MethodHelper.java:470)
+	at org.testng.internal.MethodHelper.sortMethods(MethodHelper.java:542)
+	at org.testng.internal.MethodHelper.internalCollectAndOrderMethods(MethodHelper.java:77)
+	at org.testng.internal.MethodHelper.collectAndOrderMethods(MethodHelper.java:49)
+	at org.testng.TestRunner.initMethods(TestRunner.java:327)
+	at org.testng.TestRunner.init(TestRunner.java:206)
+	at org.testng.TestRunner.init(TestRunner.java:168)
+	at org.testng.TestRunner.&lt;init&gt;(TestRunner.java:134)
+	at test.BaseTest$InternalTestRunnerFactory.newTestRunner(BaseTest.java:310)
+	at org.testng.SuiteRunner$ProxyTestRunnerFactory.newTestRunner(SuiteRunner.java:483)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:234)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at test.BaseTest.run(BaseTest.java:134)
+	at test.dependent.DependentTest.dependentMethodsWithNonExistentMethod(DependentTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:578)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:470)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:830)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:679)
+	at org.testng.TestRunner.privateRun(TestRunner.java:556)
+	at org.testng.TestRunner.run(TestRunner.java:456)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:300)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:295)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:275)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:190)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:792)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:765)
+	at org.testng.TestNG.run(TestNG.java:699)
+	at org.testng.TestNG.privateMain(TestNG.java:824)
+	at org.testng.TestNG.main(TestNG.java:802)
+]]>
+                    </full-stacktrace>
+                </exception>
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="dependentMethodsWithSkip()" name="dependentMethodsWithSkip" duration-ms="10" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.OrderMethodTest">
+            <test-method status="PASS" signature="a_second1()" name="a_second1" duration-ms="0" depends-on-groups="1.0, 1.1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="z_first0()" name="z_first0" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="z_premiere1()" name="z_premiere1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="a_second0()" name="a_second0" duration-ms="0" depends-on-groups="1.0, 1.1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="third0()" name="third0" duration-ms="1" depends-on-groups="2.*" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.dependent.ClassDependsOnGroups">
+            <test-method status="PASS" signature="verifyDependsOnGroups()" name="verifyDependsOnGroups" duration-ms="39" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="35" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Regression2">
+        <class name="test.configuration.MethodCallOrderTest">
+            <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="afterClass()" name="afterClass" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="realTest()" name="realTest" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeClass()" name="beforeClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.abstractbaseclass.DummyTest">
+            <test-method status="PASS" signature="test()" name="test" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.mannotation.MAnnotationSampleTest">
+            <test-method status="PASS" signature="verifyTestMethodLevel()" name="verifyTestMethodLevel" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyExpectedExceptions()" name="verifyExpectedExceptions" duration-ms="51" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="18" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyTestConstructorLevel()" name="verifyTestConstructorLevel" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyGetParameters()" name="verifyGetParameters" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyFactory()" name="verifyFactory" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyConfigurationOthers()" name="verifyConfigurationOthers" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyConfigurationAfter()" name="verifyConfigurationAfter" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyTestClassLevel()" name="verifyTestClassLevel" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifygetDataProvider()" name="verifygetDataProvider" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verifyConfigurationBefore()" name="verifyConfigurationBefore" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.CommandLineTest">
+            <test-method status="PASS" signature="junitParsing()" name="junitParsing" duration-ms="46" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="junitParsing2()" name="junitParsing2" duration-ms="45" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.sample.AfterClassCalledAtEnd">
+            <test-method status="PASS" signature="test3()" name="test3" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="afterClass()" name="afterClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="baseAfterClass()" name="baseAfterClass" is-config="true" duration-ms="1" depends-on-groups=".*" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="test1()" name="test1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="before1Class()" name="before1Class" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="test2()" name="test2" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.configuration.ConfigurationTest">
+            <test-method status="PASS" signature="afterMethod()" name="afterMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeMethod()" name="beforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="afterClass()" name="afterClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeClass()" name="beforeClass" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.multiple.TestMultiple">
+            <test-method status="PASS" signature="multiple()" name="multiple" duration-ms="28" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.configuration.GroupLessTest">
+            <test-method status="PASS" signature="endMethod()" name="endMethod" duration-ms="0" depends-on-groups="init" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeClassMethod()" name="beforeClassMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="initMethod()" name="initMethod" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.configuration.GroupLessTest.endMethod"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="startMethod()" name="startMethod" duration-ms="0" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.configuration.GroupLessTest.initMethod"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.MethodTest">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="19" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="includeMethodsOnly()" name="includeMethodsOnly" duration-ms="9" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="17" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="excludePackage()" name="excludePackage" duration-ms="11" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="excludeMethodsOnly()" name="excludeMethodsOnly" duration-ms="10" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.thread.ThreadPoolSizeTest">
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="2" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="f1()" name="f1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" started-at="2007-08-12T16:40:28Z" depends-on-methods="test.thread.ThreadPoolSizeTest.f1"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.privatemethod.PrivateMethodTest$PrivateMethodInnerTest">
+            <test-method status="PASS" signature="testPrivateMethod()" name="testPrivateMethod" duration-ms="1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.configuration.ExternalConfigurationClass">
+            <test-method status="PASS" signature="beforeTest()" name="beforeTest" is-config="true" duration-ms="2" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.Test4">
+            <test-method status="PASS" signature="expectedExceptions()" name="expectedExceptions" duration-ms="8" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.enabled.VerifyEnabledTest">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="disabledMethodsShouldNotRun()" name="disabledMethodsShouldNotRun" duration-ms="8" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.Test1">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="17" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="groupsOfGroupsWithCycle()" name="groupsOfGroupsWithCycle" duration-ms="17" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="groupsOfGroupsSimple()" name="groupsOfGroupsSimple" duration-ms="19" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="logger()" name="logger" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="groupsOfGroupsWithIndirections()" name="groupsOfGroupsWithIndirections" duration-ms="20" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="excludedGroups()" name="excludedGroups" duration-ms="31" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="includedGroups()" name="includedGroups" duration-ms="20" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="regexp()" name="regexp" duration-ms="26" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Test outer scope">
+        <class name="test.sample.Scope">
+            <test-method status="PASS" signature="outer(java.lang.String)" name="outer" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[out]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="outerDeprecated(java.lang.String)" name="outerDeprecated" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[out]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+    </test>
+    <test name="Regression1">
+        <class name="test.parameters.ParameterSample">
+            <test-method status="PASS" signature="beforeTest(java.lang.String)" name="beforeTest" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="testSingleStringDeprecated(java.lang.String)" name="testSingleStringDeprecated" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="beforeTestDeprecated(java.lang.String)" name="beforeTestDeprecated" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="testSingleString(java.lang.String)" name="testSingleString" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="beforeTestDeprecated(java.lang.String)" name="beforeTestDeprecated" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="beforeTest(java.lang.String)" name="beforeTest" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[Cedric]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+        <class name="test.parameters.ParameterTest">
+            <test-method status="PASS" signature="stringSingle()" name="stringSingle" duration-ms="9" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="18" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.expectedexceptions.ExpectedExceptionsTest">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="expectedExceptions()" name="expectedExceptions" duration-ms="12" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.CtorCalledOnce">
+            <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="testMethod2()" name="testMethod2" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="testMethod1()" name="testMethod1" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="testMethod3()" name="testMethod3" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.access.PrivateAccessConfigurationMethods">
+            <test-method status="PASS" signature="sameProtectedConfBeforeMethod()" name="sameProtectedConfBeforeMethod" is-config="true" duration-ms="2" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="allAccessModifiersConfiguration()" name="allAccessModifiersConfiguration" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="protectedConfBeforeMethod()" name="protectedConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="baseProtectedConfBeforeMethod()" name="baseProtectedConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="defaultConfBeforeMethod()" name="defaultConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="privateConfBeforeMethod()" name="privateConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="publicConfBeforeMethod()" name="publicConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="sameDefaultConfBeforeMethod()" name="sameDefaultConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="samePublicConfBeforeMethod()" name="samePublicConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="basePublicConfBeforeMethod()" name="basePublicConfBeforeMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.Test2">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="17" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="partialGroupsClass()" name="partialGroupsClass" duration-ms="13" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="noGroups()" name="noGroups" duration-ms="29" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="setUpWithGroups()" name="setUpWithGroups" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="partialGroupsMethod()" name="partialGroupsMethod" duration-ms="14" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+        <class name="test.Test1">
+            <test-method status="PASS" signature="groupsOfGroupsWithCycle()" name="groupsOfGroupsWithCycle" duration-ms="18" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="groupsOfGroupsSimple()" name="groupsOfGroupsSimple" duration-ms="21" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="excludedGroups()" name="excludedGroups" duration-ms="29" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="18" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="regexp()" name="regexp" duration-ms="22" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="includedGroups()" name="includedGroups" duration-ms="19" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="logger()" name="logger" duration-ms="2" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="groupsOfGroupsWithIndirections()" name="groupsOfGroupsWithIndirections" duration-ms="21" started-at="2007-08-12T16:40:28Z"
+                         finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Triangle">
+        <class name="test.triangle.Child2">
+            <test-method status="PASS" signature="postAfterTestClass()" name="postAfterTestClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="child2()" name="child2" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="initBeforeTestClass()" name="initBeforeTestClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.triangle.Child1">
+            <test-method status="PASS" signature="child1()" name="child1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="initBeforeTestClass()" name="initBeforeTestClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="postAfterTestClass()" name="postAfterTestClass" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="child1a()" name="child1a" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="BeforeTestMethod Behavior Regression">
+    </test>
+    <test name="Basic">
+        <class name="test.sample.Basic2">
+            <test-method status="PASS" signature="checkTestAtClassLevelWasRun()" name="checkTestAtClassLevelWasRun" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="basic2()" name="basic2" duration-ms="0" depends-on-groups="basic1" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.sample.Basic1">
+            <test-method status="PASS" signature="basic1()" name="basic1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeTestMethod()" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="InheritGroups">
+        <class name="test.configuration.ConfigurationInheritGroupsSampleTest">
+            <test-method status="PASS" signature="test1()" name="test1" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+        </class>
+        <class name="test.configuration.ExternalConfigurationClass">
+            <test-method status="PASS" signature="afterSuite()" name="afterSuite" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="cleanUp()" name="cleanUp" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="afterSuite()" name="afterSuite" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+        </class>
+        <class name="test.configuration.GroupLessTest">
+            <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeSuite()" name="beforeSuite" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="1" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="init()" name="init" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="beforeSuite()" name="beforeSuite" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="2" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+            <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:28Z" finished-at="2007-08-12T16:40:28Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Inheritance">
+        <class name="test.SampleInheritance">
+            <test-method status="PASS" signature="configuration1()" name="configuration1" is-config="true" duration-ms="0" depends-on-groups="configuration0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="baseConfiguration()" name="baseConfiguration" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="configurationsWereCalledInOrder()" name="configurationsWereCalledInOrder" duration-ms="0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="configuration0()" name="configuration0" is-config="true" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="baseMethod()" name="baseMethod" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="configuration2()" name="configuration2" is-config="true" duration-ms="0" depends-on-groups="configuration1" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="testBooleans()" name="testBooleans" duration-ms="1" depends-on-groups="inheritedTestMethod" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="inheritedMethodsWereCalledInOrder()" name="inheritedMethodsWereCalledInOrder" duration-ms="0" depends-on-groups="inheritedTestMethod"
+                         started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="InvocationCount">
+        <class name="test.InvocationAndSuccessPercentageTest">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="successPercentageThatFails()" name="successPercentageThatFails" duration-ms="17" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="invocationCount()" name="invocationCount" duration-ms="12" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="16" started-at="2007-08-12T16:40:30Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="successPercentageThatSucceeds()" name="successPercentageThatSucceeds" duration-ms="13" started-at="2007-08-12T16:40:30Z"
+                         finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Test class groups 1">
+        <class name="test.classgroup.Second">
+            <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" depends-on-groups="first" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.classgroup.First">
+            <test-method status="PASS" signature="first1()" name="first1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="first2()" name="first2" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="JUnit">
+        <class name="test.JUnitTest1">
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="14" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="0" depends-on-groups="initTest" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="0" depends-on-groups="initTest" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodsThatStartWithTest()" name="methodsThatStartWithTest" duration-ms="2" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodsWithSetup()" name="methodsWithSetup" duration-ms="2" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="testSuite()" name="testSuite" duration-ms="2" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="15" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="0" depends-on-groups="initTest" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="TimeOut">
+        <class name="test.Test3">
+            <test-method status="PASS" signature="timeOut()" name="timeOut" duration-ms="1023" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:30Z">
+            </test-method>
+            <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="17" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="Test class groups 2">
+        <class name="test.classgroup.Second">
+            <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" depends-on-groups="first" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+        <class name="test.classgroup.First">
+            <test-method status="PASS" signature="first1()" name="first1" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+            <test-method status="PASS" signature="first2()" name="first2" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+            </test-method>
+        </class>
+    </test>
+    <test name="CheckTrianglePost">
+        <class name="test.triangle.CheckCount">
+            <test-method status="PASS" signature="testCheckCount(java.lang.String)" name="testCheckCount" duration-ms="0" started-at="2007-08-12T16:40:29Z" finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[2]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+            <test-method status="PASS" signature="testCheckCountDeprecated(java.lang.String)" name="testCheckCountDeprecated" duration-ms="0" started-at="2007-08-12T16:40:29Z"
+                         finished-at="2007-08-12T16:40:29Z">
+                <params>
+                    <param index="0">
+                        <value>
+                            <![CDATA[2]]>
+                        </value>
+                    </param>
+                </params>
+            </test-method>
+        </class>
+    </test>
+</suite>

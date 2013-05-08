@@ -1,0 +1,12 @@
+<test name="Test class groups 1">
+  <class name="test.classgroup.Second">
+    <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" depends-on-groups="first" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.classgroup.First">
+    <test-method status="PASS" signature="first1()" name="first1" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="first2()" name="first2" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

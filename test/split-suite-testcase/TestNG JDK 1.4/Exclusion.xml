@@ -1,0 +1,28 @@
+<test name="Exclusion">
+  <class name="test.Test2">
+    <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="partialGroupsClass()" name="partialGroupsClass" duration-ms="7" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="noGroups()" name="noGroups" duration-ms="15" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="partialGroupsMethod()" name="partialGroupsMethod" duration-ms="5" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="setUpWithGroups()" name="setUpWithGroups" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="correctSetup()" name="correctSetup" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="10" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

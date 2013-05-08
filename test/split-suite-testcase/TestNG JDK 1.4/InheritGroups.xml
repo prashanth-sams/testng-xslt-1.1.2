@@ -1,0 +1,8 @@
+<test name="InheritGroups">
+  <class name="test.configuration.ConfigurationInheritGroupsSampleTest">
+    <test-method status="PASS" signature="test1()" name="test1" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+    <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+  </class>
+</test>

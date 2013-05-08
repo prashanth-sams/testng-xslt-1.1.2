@@ -1,0 +1,22 @@
+<test name="JUnit">
+  <class name="test.JUnitTest1">
+    <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="0" depends-on-groups="initTest" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="10" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="0" depends-on-groups="initTest" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodsThatStartWithTest()" name="methodsThatStartWithTest" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="testSuite()" name="testSuite" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodsWithSetup()" name="methodsWithSetup" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="initJUnitFlag()" name="initJUnitFlag" is-config="true" duration-ms="1" depends-on-groups="initTest" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

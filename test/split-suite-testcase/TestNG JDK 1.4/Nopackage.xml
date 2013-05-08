@@ -1,0 +1,8 @@
+<test name="Nopackage">
+  <class name="NoPackageTest">
+    <test-method status="PASS" signature="afterTest()" name="afterTest" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+    <test-method status="PASS" signature="test()" name="test" duration-ms="0" started-at="2008-06-11T21:09:53Z" finished-at="2008-06-11T21:09:53Z">
+    </test-method>
+  </class>
+</test>

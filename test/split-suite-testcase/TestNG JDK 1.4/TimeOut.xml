@@ -1,0 +1,8 @@
+<test name="TimeOut">
+  <class name="test.Test3">
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="9" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="timeOut()" name="timeOut" duration-ms="1012" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+  </class>
+</test>

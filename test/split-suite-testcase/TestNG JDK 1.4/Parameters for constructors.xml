@@ -1,0 +1,6 @@
+<test name="Parameters for constructors">
+  <class name="test.ParameterConstructorTest">
+    <test-method status="PASS" signature="verify()" name="verify" duration-ms="0" started-at="2008-06-11T21:09:57Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+  </class>
+</test>

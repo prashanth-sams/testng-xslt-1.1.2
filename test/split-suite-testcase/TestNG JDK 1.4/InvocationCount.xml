@@ -1,0 +1,20 @@
+<test name="InvocationCount">
+  <class name="test.invocationcount.FailedInvocationCountTest">
+    <test-method status="PASS" signature="verifyAttributeShouldStop()" name="verifyAttributeShouldStop" duration-ms="1192" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:57Z">
+    </test-method>
+  </class>
+  <class name="test.InvocationAndSuccessPercentageTest">
+    <test-method status="PASS" signature="successPercentageThatSucceeds()" name="successPercentageThatSucceeds" duration-ms="20" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+    <test-method status="PASS" signature="invocationCount()" name="invocationCount" duration-ms="7" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+    <test-method status="PASS" signature="successPercentageThatFails()" name="successPercentageThatFails" duration-ms="24" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="21" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="26" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+    <test-method status="PASS" signature="methodSetUp()" name="methodSetUp" is-config="true" duration-ms="26" started-at="2008-06-11T21:09:56Z" finished-at="2008-06-11T21:09:56Z">
+    </test-method>
+  </class>
+</test>

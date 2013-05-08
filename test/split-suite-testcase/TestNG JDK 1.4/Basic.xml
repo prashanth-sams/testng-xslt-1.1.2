@@ -1,0 +1,14 @@
+<test name="Basic">
+  <class name="test.sample.Basic2">
+    <test-method status="PASS" signature="basic2()" name="basic2" duration-ms="0" depends-on-groups="basic1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="checkTestAtClassLevelWasRun()" name="checkTestAtClassLevelWasRun" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.sample.Basic1">
+    <test-method status="SKIP" signature="basic1()" name="basic1" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="beforeTestMethod()" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

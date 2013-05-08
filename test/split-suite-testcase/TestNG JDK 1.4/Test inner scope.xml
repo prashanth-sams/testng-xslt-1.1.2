@@ -1,0 +1,22 @@
+<test name="Test inner scope">
+  <class name="test.sample.Scope">
+    <test-method status="PASS" signature="inner(java.lang.String)" name="inner" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[in]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="PASS" signature="innerDeprecated(java.lang.String)" name="innerDeprecated" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[in]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+</test>

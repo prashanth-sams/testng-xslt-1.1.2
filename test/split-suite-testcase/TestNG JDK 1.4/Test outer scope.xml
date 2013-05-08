@@ -1,0 +1,22 @@
+<test name="Test outer scope">
+  <class name="test.sample.Scope">
+    <test-method status="PASS" signature="outer(java.lang.String)" name="outer" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[out]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+    <test-method status="PASS" signature="outerDeprecated(java.lang.String)" name="outerDeprecated" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+      <params>
+        <param index="0">
+          <value>
+            <![CDATA[out]]>
+          </value>
+        </param>
+      </params>
+    </test-method>
+  </class>
+</test>

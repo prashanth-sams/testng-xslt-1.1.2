@@ -1,0 +1,42 @@
+<test name="Factory">
+  <class name="test.factory.IInstanceFactory">
+    <test-method status="PASS" signature="afterVerification()" name="afterVerification" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.IInstanceFactory$TestInterface">
+    <test-method status="PASS" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.MyTest">
+    <test-method status="PASS" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="0" depends-on-groups="testMethodOnFactoryClass" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="0" depends-on-groups="testMethodOnFactoryClass" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="verifyThatTestMethodOnFactoryClassWasRun()" name="verifyThatTestMethodOnFactoryClassWasRun" duration-ms="0" depends-on-groups="testMethodOnFactoryClass" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="testMethod()" name="testMethod" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.FactoryTest2">
+    <test-method status="PASS" signature="testInt()" name="testInt" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="testInt()" name="testInt" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.FactoryInSeparateClass">
+    <test-method status="PASS" signature="checkSum()" name="checkSum" duration-ms="0" depends-on-groups="MyTest" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.VerifyFactoryTest">
+    <test-method status="PASS" signature="mainCheck()" name="mainCheck" duration-ms="0" depends-on-groups="first" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+  <class name="test.factory.FactoryWithDataProviderTest">
+    <test-method status="PASS" signature="verifyDataProvider()" name="verifyDataProvider" duration-ms="33" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

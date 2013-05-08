@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+    <reporter-output>
+    </reporter-output>
+    <suite name="Suite" duration-ms="44829" started-at="2011-11-21T15:38:48Z" finished-at="2011-11-21T15:39:33Z">
+        <groups>
+        </groups>
+        <test name="FirefoxTests" duration-ms="39204" started-at="2011-11-21T15:38:48Z" finished-at="2011-11-21T15:39:27Z">
+            <class name="SanityScenarios.SC01">
+                <test-method status="PASS"
+                             signature="startServerInProxymode()" name="startServerInProxymode" is-config="true" duration-ms="312" started-at="2011-11-21T15:38:48Z"
+                             finished-at="2011-11-21T15:38:48Z">
+                </test-method>
+                <test-method status="PASS"
+                             signature="beforeClass(java.lang.String, java.lang.String,java.lang.String, java.lang.String)" name="beforeClass" is-config="true" duration-ms="23907"
+                             started-at="2011-11-21T15:38:48Z"
+                             finished-at="2011-11-21T15:39:12Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[localhost]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[4444]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[*chrome]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[http://192.168.13.47/]]>
+                            </value>
+                        </param>
+                    </params>
+                </test-method>
+                <test-method status="PASS" signature="sc01()" name="sc01"
+                             duration-ms="15047" started-at="2011-11-21T15:39:12Z" finished-at="2011-11-21T15:39:27Z">
+                </test-method>
+                <test-method status="PASS" signature="after()" name="after" is-config="true" duration-ms="250" started-at="2011-11-21T15:39:27Z"
+                             finished-at="2011-11-21T15:39:27Z">
+                </test-method>
+            </class>
+        </test>
+        <test name="IexploreTests" duration-ms="44829" started-at="2011-11-21T15:38:48Z" finished-at="2011-11-21T15:39:33Z">
+            <class name="SanityScenarios.SC01">
+                <test-method status="PASS"
+                             signature="beforeClass(java.lang.String, java.lang.String,java.lang.String, java.lang.String)" name="beforeClass" is-config="true" duration-ms="5657"
+                             started-at="2011-11-21T15:38:48Z"
+                             finished-at="2011-11-21T15:38:54Z">
+                    <params>
+                        <param index="0">
+                            <value>
+                                <![CDATA[localhost]]>
+                            </value>
+                        </param>
+                        <param index="1">
+                            <value>
+                                <![CDATA[4444]]>
+                            </value>
+                        </param>
+                        <param index="2">
+                            <value>
+                                <![CDATA[*iexplore]]>
+                            </value>
+                        </param>
+                        <param index="3">
+                            <value>
+                                <![CDATA[http://192.168.13.47/]]>
+                            </value>
+                        </param>
+                    </params>
+                </test-method>
+                <test-method status="PASS" signature="sc01()" name="sc01"
+                             duration-ms="38688" started-at="2011-11-21T15:38:54Z" finished-at="2011-11-21T15:39:33Z">
+                </test-method>
+                <test-method status="PASS" signature="after()" name="after" is-config="true" duration-ms="438" started-at="2011-11-21T15:39:33Z"
+                             finished-at="2011-11-21T15:39:33Z">
+                </test-method>
+            </class>
+        </test>
+    </suite>
+</testng-results>

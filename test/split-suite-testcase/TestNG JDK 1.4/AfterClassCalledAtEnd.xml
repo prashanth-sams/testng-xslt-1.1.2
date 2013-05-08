@@ -1,0 +1,16 @@
+<test name="AfterClassCalledAtEnd">
+  <class name="test.sample.AfterClassCalledAtEnd">
+    <test-method status="SKIP" signature="test3()" name="test3" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="FAIL" signature="test1()" name="test1" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="FAIL" signature="baseAfterClass()" name="baseAfterClass" is-config="true" duration-ms="0" depends-on-groups=".*" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="test2()" name="test2" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="SKIP" signature="afterClass()" name="afterClass" is-config="true" duration-ms="1" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+    <test-method status="PASS" signature="before1Class()" name="before1Class" is-config="true" duration-ms="0" started-at="2008-06-11T21:09:54Z" finished-at="2008-06-11T21:09:54Z">
+    </test-method>
+  </class>
+</test>

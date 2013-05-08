@@ -1,0 +1,96 @@
+<project name="testng-xslt" basedir=".">
+
+    <property name="src.dir" value="src"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="test.dir" value="test"/>
+    <property name="version" value="1.1.2"/>
+
+    <path id="test.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+    </path>
+
+    <target name="test">
+        <antcall target="testcase">
+            <param name="dir" value="single"/>
+        </antcall>
+
+        <antcall target="test.css"/>
+
+        <antcall target="testcase">
+            <param name="dir" value="split-suite"/>
+        </antcall>
+
+        <antcall target="testcase">
+            <param name="dir" value="split-suite-testcase"/>
+        </antcall>
+
+        <antcall target="test.runtimeTotals"/>
+    </target>
+
+    <libfileset dir="${lib.dir}" includes="*.jar"/>
+
+    <target name="testcase">
+        <property name="dir" value=""/>
+
+        <mkdir dir="${test.dir}/${dir}/output"/>
+
+        <xslt in="${test.dir}/${dir}/testng-results.xml" style="src/main/resources/testng-results.xsl"
+              out="${test.dir}/${dir}/output/index.html" classpathref="test.classpath" processor="SaxonLiaison">
+            <param name="testNgXslt.outputDir" expression="${basedir}/${test.dir}/${dir}/output/"/>
+        </xslt>
+    </target>
+
+    <target name="test.css">
+        <mkdir dir="${test.dir}/custom-css/output"/>
+
+        <xslt in="${test.dir}/custom-css/testng-results.xml" style="src/main/resources/testng-results.xsl"
+              out="${test.dir}/custom-css/output/index.html" classpathref="test.classpath" processor="SaxonLiaison">
+            <param name="testNgXslt.outputDir" expression="${basedir}/${test.dir}/custom-css/output/"/>
+            <param name="testNgXslt.cssFile" expression="../custom.css"/>
+        </xslt>
+    </target>
+
+    <target name="test.runtimeTotals">
+        <mkdir dir="${test.dir}/runtime-totals/output"/>
+
+        <xslt in="${test.dir}/runtime-totals/testng-results.xml" style="src/main/resources/testng-results.xsl"
+              out="${test.dir}/runtime-totals/output/index.html" classpathref="test.classpath" processor="SaxonLiaison">
+            <param name="testNgXslt.outputDir" expression="${basedir}/${test.dir}/runtime-totals/output/"/>
+            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
+        </xslt>
+    </target>
+
+    <target name="test.debug">
+        <delete dir="${test.dir}/debug/output"/>
+        <mkdir dir="${test.dir}/debug/output"/>
+
+        <xslt in="${test.dir}/debug/testng-results.xml" style="src/main/resources/testng-results.xsl"
+              out="${test.dir}/debug/output/index.html" classpathref="test.classpath">
+            <param name="testNgXslt.outputDir" expression="${basedir}/${test.dir}/debug/output/"/>
+
+            <param expression="true" name="testNgXslt.sortTestCaseLinks"/>
+            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter"/>
+            <param expression="true" name="testNgXslt.showRuntimeTotals"/>
+        </xslt>
+    </target>
+
+    <target name="dist">
+        <delete dir="." includes="*.zip"/>
+        <zip destfile="testng-xslt-${version}.zip">
+            <fileset dir="." includes="src/**"/>
+            <fileset dir="." includes="lib/**"/>
+            <fileset dir="." includes="test/**"/>
+            <fileset dir="." includes="build.xml"/>
+            <fileset dir="." includes="pom.xml"/>
+        </zip>
+    </target>
+
+    <target name="clean">
+        <delete dir="${test.dir}/single/output"/>
+        <delete dir="${test.dir}/custom-css/output"/>
+        <delete dir="${test.dir}/split-suite/output"/>
+        <delete dir="${test.dir}/split-suite-testcase/output"/>
+        <delete dir="${test.dir}/runtime-totals/output"/>
+    </target>
+
+</project>
